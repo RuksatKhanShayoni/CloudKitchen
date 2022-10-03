@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #2E1503;
+    align-self: center;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: url(background.jpg);
+    opacity: 90%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.formbox {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #D2B48C;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 5px #181818;
+}
+
+.formbox2 {
+    width: 380px;
+    height: auto;
+    position: relative;
+    margin: 3% auto;
+    background: #D2B48C;
+    padding: 5px;
+    overflow: vertical;
+    border-radius: 5px;
+    box-shadow: 3px 5px #181818;
+
+}
+
+.formbox3 {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 3% auto;
+    background: #D2B48C;
+    padding: 5px;
+    overflow: scroll;
+    border-radius: 5px;
+    box-shadow: 3px 5px #181818;
+}
+
+.buttonbox {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #c1c1c1;
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    Cursor: Pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #3D3D3D;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group {
+    top: 90px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #3D3D3D;
+    border: 0;
+    outline: none;
+}
+
+.check-box {
+    margin: 30px 10px 30px 0;
+}
+
+span {
+    color: #777;
+    font-size: 12px;
+    bottom: 50px;
+    position: absolute;
+
+}
+
+#Signin {
+    left: 450px;
+}
+
+#Signup {
+    left: 50px;
+}
+
+#usertype {
+    font-size: 5px;
+}
+
+#button1 {
+    background-color: #68991c;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+#button1 {
+    background-color: #68991c;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#button2 {
+    background-color: #D2B48C;
+    border-color: #3C280D;
+    color: #2e1503;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 340px;
+    height: 30px;
+}
+
+#button3 {
+    background-color: #B80F0A;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+#button4 {
+    background-color: #5C634F;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+.rights {
+    text-align: center;
+    font-size: x-small;
+}
+
+.err {
+    color: red;
+}
+
+
+.formtop {
+    width: 340px;
+    height: 4%;
+    background-color: #3D3D3D;
+    color: white;
+    box-shadow: 0 0 20px 9px #c1c1c1;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.center {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#button2 {
+    background-color: #D2B48C;
+    border-color: #3C280D;
+    color: #2e1503;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 340px;
+    height: 30px;
+}
+
+#button3 {
+    background-color: #B80F0A;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
