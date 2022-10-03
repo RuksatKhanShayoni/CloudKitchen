@@ -1,0 +1,115 @@
+<?php
+    $isPost = false;
+    $id = "";
+    $pass = "";
+	
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Login Customer </title>
+	
+	<style>
+        .top {
+            text-align: center;
+        }
+
+        .h4 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .center {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        #right {
+            text-align: center;
+            font-size: x-small;
+        }
+    </style>
+	
+</head>
+
+<body>
+
+
+	<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+
+		<h1 class="top">Cloud Kitchen</h1>
+	
+			<hr>
+		
+			<br>
+			<br>
+			<h2 class="top">Login for Customer</h2>
+			<br>
+			<br>
+			<div class="center">
+				<p>Login ID: <input type="text" name="id" id="id"> </p>
+				<?php 
+				
+                if (isset($_POST["btnSave"]))
+                {
+                    $isPost = true;
+                    if (isset($_POST["id"]))
+                    {
+                        $id = $_POST["id"];
+                    }
+                }
+                if ($isPost == true && $id == "")
+                {
+                    echo "<span style = 'color:red;'>Required </span>";
+                }
+				
+				?>
+				
+				<p>Password: <input type="password" name="pass" id="pass"></p>
+				<?php 
+                
+				if (isset($_POST["btnSave"]))
+                {
+                    $isPost = true;
+                    if (isset($_POST["pass"]))
+                    {
+                        $pass = $_POST["pass"];
+                    }
+                }
+                if ($isPost == true && $pass == "")
+                {
+                    echo "<span style = 'color:red;'>Required</span>";
+                }
+				?>
+				
+				<?php
+				if(isset($_POST["btnSave"]))
+				{
+					if ($id=="CUSTOMER" && $pass=="CUSTOMER")
+					{
+						header('Location:Customer.php');
+					}
+					
+					else
+					{
+						echo("Incorrect username or password");
+					}
+				}
+				?>
+				
+				<br>
+				<br>
+				<br>
+				<input type="submit" value="Login" name="btnSave"> <br> <br> <br> <br>
+		
+			</div>
+
+            <div class = "top">
+                <a href="Home-Page-For-All.php">Go back to Home Page</a>
+            </div>
+	</form>	
+
+</body>
+
+</html>
